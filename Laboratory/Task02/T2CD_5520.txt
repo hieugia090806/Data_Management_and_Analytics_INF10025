@@ -1,0 +1,101 @@
+"Suburb","CustType","Description","CountOfCustomer Id"
+"Ascot Vale","A","Pick-Up",5
+"Ascot Vale","B","Australia Post",2
+"Ascot Vale","C","Courier",2
+"Brooklyn","B","Australia Post",4
+"Brooklyn","C","Courier",3
+"Brunswick","A","Pick-Up",3
+"Brunswick","B","Australia Post",5
+"Brunswick","C","Courier",5
+"Bundoora","A","Pick-Up",1
+"Bundoora","B","Australia Post",2
+"Bundoora","C","Courier",1
+"Carlton","A","Pick-Up",2
+"Carlton","B","Australia Post",2
+"Carlton","C","Courier",4
+"Chadstone","A","Pick-Up",2
+"Chadstone","B","Australia Post",2
+"Chadstone","C","Courier",2
+"Coburg North","A","Pick-Up",3
+"Coburg North","B","Australia Post",3
+"Craigieburn","B","Australia Post",3
+"Craigieburn","C","Courier",1
+"Cranbourne","A","Pick-Up",3
+"Cranbourne","B","Australia Post",4
+"Cranbourne","C","Courier",3
+"Epping","A","Pick-Up",6
+"Epping","B","Australia Post",4
+"Epping","C","Courier",1
+"Essendon","A","Pick-Up",1
+"Essendon","B","Australia Post",5
+"Essendon","C","Courier",2
+"Fitzroy","A","Pick-Up",7
+"Fitzroy","B","Australia Post",8
+"Fitzroy","C","Courier",7
+"Footscray","B","Australia Post",2
+"Footscray","C","Courier",1
+"Glenroy","A","Pick-Up",2
+"Glenroy","B","Australia Post",1
+"Glenroy","C","Courier",7
+"Hawthorn","A","Pick-Up",6
+"Hawthorn","B","Australia Post",13
+"Hawthorn","C","Courier",10
+"Hillside","A","Pick-Up",1
+"Hillside","B","Australia Post",3
+"Hillside","C","Courier",1
+"Hoppers Crossing","A","Pick-Up",2
+"Hoppers Crossing","B","Australia Post",5
+"Hoppers Crossing","C","Courier",3
+"Hurstbridge","A","Pick-Up",1
+"Hurstbridge","B","Australia Post",1
+"Hurstbridge","C","Courier",3
+"Keilor Downs","A","Pick-Up",4
+"Keilor Downs","B","Australia Post",3
+"Keilor Downs","C","Courier",8
+"Kensington","A","Pick-Up",6
+"Kensington","B","Australia Post",7
+"Kensington","C","Courier",6
+"Lalor","A","Pick-Up",3
+"Lalor","B","Australia Post",2
+"Lalor","C","Courier",3
+"Mentone","A","Pick-Up",1
+"Mentone","C","Courier",3
+"Mill Park","A","Pick-Up",5
+"Mill Park","B","Australia Post",2
+"Mill Park","C","Courier",3
+"Moonee Ponds","A","Pick-Up",2
+"Moonee Ponds","B","Australia Post",8
+"Moonee Ponds","C","Courier",3
+"North Melbourne","B","Australia Post",3
+"North Melbourne","C","Courier",3
+"Northcote","A","Pick-Up",2
+"Northcote","B","Australia Post",7
+"Northcote","C","Courier",3
+"Point Cook","A","Pick-Up",4
+"Point Cook","B","Australia Post",2
+"Point Cook","C","Courier",3
+"Preston","A","Pick-Up",2
+"Preston","B","Australia Post",1
+"Preston","C","Courier",1
+"Reservoir","A","Pick-Up",4
+"Reservoir","B","Australia Post",7
+"Reservoir","C","Courier",2
+"Richmond","A","Pick-Up",4
+"Richmond","B","Australia Post",5
+"Richmond","C","Courier",2
+"Scoresby","A","Pick-Up",6
+"Scoresby","B","Australia Post",6
+"Scoresby","C","Courier",7
+"Sunshine North","C","Courier",2
+"Sunshine West","A","Pick-Up",2
+"Sunshine West","B","Australia Post",5
+"Sunshine West","C","Courier",2
+"Thomastown","A","Pick-Up",5
+"Thomastown","B","Australia Post",2
+"Thomastown","C","Courier",3
+"Wattle Park","A","Pick-Up",3
+"Wattle Park","B","Australia Post",2
+"Wattle Park","C","Courier",1
+"Yarraville","A","Pick-Up",2
+"Yarraville","B","Australia Post",4
+"Yarraville","C","Courier",3
