@@ -19,3 +19,26 @@
     * Week10: Normalisation, NoSQL, and JSON.
     * Week11: Transactions, ACID, ETL, and Data Warehousing.
     * Week12: Summary and Review
+## 📁 Repository Structure. ##
+> This repository is organised by learning activity, so every piece of work for the unit can be found in one place and traced back to the week it belongs to.
+
+```text
+Data_Management_and_Analytics_INF10025/
+├── Document/                  # Self-learning notes and study documents
+├── Laboratory/                # Weekly laboratory tasks and solutions
+├── Learning Summary Report/   # Report guidance, samples and the final report
+├── Modules/                   # Lecture materials, cheatsheets and reference documents
+├── Test/                      # Test preparation and test submissions
+├── Tutorials/                 # Weekly tutorial tasks and lecture materials
+└── README.md                  # Project overview (this file)
+```
+
+| Folder | Description |
+|--------|-------------|
+| 📘 **Document** | Self-learning documents and personal study notes written while working through the tutorials. |
+| 🧪 **Laboratory** | Hands-on laboratory tasks: database creation, queries, data import/export and other practical exercises. |
+| 📝 **Learning Summary Report** | Guidance, sample reports and the final Learning Summary Report that reflects on the learning outcomes. |
+| 📚 **Modules** | Module content and quick-reference material, including the SQL Cheatsheet (syntax, examples and results from basic to advanced). |
+| ✅ **Test** | Preparation materials and work for the unit tests (e.g. Test 01). |
+| 🎓 **Tutorials** | Weekly tutorial tasks (Task01, Task02, …) and the matching weekly lecture content. |
+| 📄 **README.md** | Overview of the unit, learning outcomes and the weekly learning journey map. |
