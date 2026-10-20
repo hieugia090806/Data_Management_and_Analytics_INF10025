@@ -1,0 +1,13 @@
+INSERT INTO CAR5520 (RegNo, Make, Model, SaleDate, OdometerReading)
+VALUES ('1AMT7U', 'Aston Martin', 'Vantage', TO_DATE('March 12 2022', 'Month DD YYYY'), 5300);
+
+INSERT INTO CAR5520 (RegNo, Make, Model, SaleDate, OdometerReading)
+VALUES ('51F12345', 'Toyota', 'Camry Hieu', TO_DATE('January 15 2023', 'Month DD YYYY'), 15000);
+
+INSERT INTO CAR5520 (RegNo, Make, Model, SaleDate, OdometerReading)
+VALUES ('29A99999', 'Honda', 'Civic', TO_DATE('July 20 2021', 'Month DD YYYY'), 32000);
+
+INSERT INTO CAR5520 (RegNo, Make, Model, SaleDate, OdometerReading)
+VALUES ('60B88888', 'Truong Ngoc Gia Hieu', 'VF8', TO_DATE('November 05 2023', 'Month DD YYYY'), 8500);
+
+COMMIT;

@@ -1,43 +1,16 @@
-PROMPT  THIS SCRIPT CREATES AND POPULATES THE MOVIE DATABASE TABLES. Last updated Mar 2020.
-PROMPT  Execute this script in ISQL JR.
-PROMPT  When completed, do the following:
-PROMPT  1. Clear the SQL statement box
-PROMPT  2. Type this SQL statement and execute.   SELECT * FROM MOVIE5520
-PROMPT     (This is how you see the rows in the Movie Table that script created)
-PROMPT  3. Repeat similar SELECT statements for the ACTOR5520 and CASTING5520 tables.
-PROMPT  .
-
-
-
-PROMPT  Dropping any old versions of the Movie DB tables...
-
-DROP TABLE CASTING5520; 
-DROP TABLE ACTOR5520; 
-DROP TABLE MOVIE5520; 
-DROP TABLE COLOURTYPE5520; 
-DROP TABLE RATING5520; 
-
-PROMPT ****
-PROMPT **** Create RATING Table...
 CREATE TABLE RATING5520 (
   RATINGCODE   VARCHAR(2)
 , SHORTDESC    VARCHAR(30)
 , LONGDESC     VARCHAR(100)
 , PRIMARY KEY  (RATINGCODE)
 );
-PROMPT **** The RATING table has been created
 
-PROMPT ****
-PROMPT **** Create COLOURTYPE Table...
 CREATE TABLE COLOURTYPE5520 (
   COLOURCODE   VARCHAR(1)
 , COLOURNAME   VARCHAR(30)
 , PRIMARY KEY  (COLOURCODE)
 );
-PROMPT **** The COLOURTYPE table has been created
 
-PROMPT ****-------------------------
-PROMPT **** CREATE MOVIE TABLE ****
 CREATE TABLE MOVIE5520 (
   MOVIENO      NUMBER(8) PRIMARY KEY
 , TITLE        VARCHAR(100)
@@ -51,10 +24,7 @@ CREATE TABLE MOVIE5520 (
 , FOREIGN KEY (RATINGCODE) references RATING5520
 , FOREIGN KEY (COLOURCODE) references COLOURTYPE5520
 );
-PROMPT **** The MOVIE table has been created
 
-PROMPT ****-------------------------
-PROMPT **** CREATE ACTOR TABLE ****
 CREATE TABLE ACTOR5520
 (
   ACTORNO      NUMBER(8)
@@ -69,10 +39,7 @@ CREATE TABLE ACTOR5520
 , NOOFCATS     NUMBER(2) 
 , PRIMARY KEY (ACTORNO)
 );
-PROMPT **** The ACTOR table has been created
 
-PROMPT ****-------------------------
-PROMPT **** CREATE CASTING TABLE ****
 CREATE TABLE CASTING5520 (
   CASTID Number(8)
 , ACTORNO NUMBER(8)
@@ -81,24 +48,16 @@ CREATE TABLE CASTING5520 (
 , FOREIGN KEY (ACTORNO) references ACTOR5520
 , FOREIGN KEY (MOVIENO) references MOVIE5520
 );
-PROMPT **** The CASTING table has been created
 
-PROMPT ****
-PROMPT **** Populating the RATING table...
 INSERT INTO RATING5520 (ratingcode, shortdesc, longdesc) VALUES ('G', 'GENERAL','Suitable for all ages');
 INSERT INTO RATING5520 (ratingcode, shortdesc, longdesc) VALUES ('M', 'MATURE (15+)','Recommended for mature audiences 15 years and over');
 INSERT INTO RATING5520 (ratingcode, shortdesc, longdesc) VALUES ('MA', 'MATURE ACCOMPANIED (15+)','Persons under 15 years must be accompanied by a mature adult');
 INSERT INTO RATING5520 (ratingcode, shortdesc, longdesc) VALUES ('PG', 'PARENTAL GUIDANCE','Parental guidance recommended for persons under 15 years');
 INSERT INTO RATING5520 (ratingcode, shortdesc, longdesc) VALUES ('R', 'RESTRICTED (18+)','Restricted to mature adults 18 years and over');
-PROMPT ****
-PROMPT **** The RATING table has been populated with data
 
-PROMPT ****
-PROMPT **** Populating the COLOURTYPE table...
+
 INSERT INTO COLOURTYPE5520 (colourcode, colourname) VALUES ('B', 'Black & White Movie');
-INSERT INTO COLOURTYP5520 (colourcode, colourname) VALUES ('C', 'Colour Movie');
-PROMPT ****
-PROMPT The COLOURTYPE table has been populated with data
+INSERT INTO COLOURTYPE5520 (colourcode, colourname) VALUES ('C', 'Colour Movie');
 
 Insert Into ACTOR5520 (ActorNo,FullName,GivenName, Surname, Gender, Birthdate, Birthcountry, Password, NoOfDogs, NoOfCats) Values (3, 'Harrison Ford', 'Harrison', 'Ford', 'M', TO_DATE('13/07/1942', 'dd/mm/yyyy'), 'USA', 'bDbaDC', 4, 0);
 Insert Into ACTOR5520 (ActorNo,FullName,GivenName, Surname, Gender, Birthdate, Birthcountry, Password, NoOfDogs, NoOfCats) Values (7, 'Andrew Stanton', 'Andrew', 'Stanton', 'M', TO_DATE('3/12/1965', 'dd/mm/yyyy'), 'USA', 'aaabaD', 1, 3);
@@ -925,7 +884,6 @@ Insert Into ACTOR5520 (ActorNo,FullName,GivenName, Surname, Gender, Birthdate, B
 Insert Into ACTOR5520 (ActorNo,FullName,GivenName, Surname, Gender, Birthdate, Birthcountry, Password, NoOfDogs, NoOfCats) Values (2046028, 'Caitlyn de Abrue', 'Caitlyn', 'de Abrue', 'F', TO_DATE('11/01/1996', 'dd/mm/yyyy'), 'USA', 'cABddA', 2, 1);
 Insert Into ACTOR5520 (ActorNo,FullName,GivenName, Surname, Gender, Birthdate, Birthcountry, Password, NoOfDogs, NoOfCats) Values (2046029, 'Juliet Blacher', 'Juliet', 'Blacher', 'F', TO_DATE('3/09/1995', 'dd/mm/yyyy'), 'USA', 'abAAAD', 1, 1);
 Insert Into ACTOR5520 (ActorNo,FullName,GivenName, Surname, Gender, Birthdate, Birthcountry, Password, NoOfDogs, NoOfCats) Values (2216110, 'Jonathan Groff', 'Jonathan', 'Groff', 'M', TO_DATE('26/03/1985', 'dd/mm/yyyy'), 'USA', 'DCBdCD', 2, 2);
-PROMPT **** The ACOTR table has been populated with data;
 
 Insert Into MOVIE5520 (MovieNo, Title,RelYear, RunTime, RatingCode, ColourCode, TMDB_Score, TMDB_Votes, IMDB_ID) Values (13, 'Forrest Gump', 1994, 142, 'PG', 'C', 8.4, 13591, 'tt0109830');
 Insert Into MOVIE5520 (MovieNo, Title,RelYear, RunTime, RatingCode, ColourCode, TMDB_Score, TMDB_Votes, IMDB_ID) Values (22, 'Pirates of the Caribbean: The Curse of the Black Pearl', 2003, 143, 'PG', 'C', 7.7, 11491, 'tt0325980');
@@ -1322,7 +1280,6 @@ Insert Into MOVIE5520 (MovieNo, Title,RelYear, RunTime, RatingCode, ColourCode, 
 Insert Into MOVIE5520 (MovieNo, Title,RelYear, RunTime, RatingCode, ColourCode, TMDB_Score, TMDB_Votes, IMDB_ID) Values (489925, 'Eighth Grade', 2018, 94, 'M', 'C', 7.6, 326, 'tt7014006');
 Insert Into MOVIE5520 (MovieNo, Title,RelYear, RunTime, RatingCode, ColourCode, TMDB_Score, TMDB_Votes, IMDB_ID) Values (512200, 'Jumanji: The Next Level', 2019, 98, 'PG', 'C', 7.3, 1671, 'tt7975244');
 Insert Into MOVIE5520 (MovieNo, Title,RelYear, RunTime, RatingCode, ColourCode, TMDB_Score, TMDB_Votes, IMDB_ID) Values (549053, 'Last Christmas', 2019, 102, 'PG', 'C', 7.2, 573, 'tt8623904');
-PROMPT **** The MOVIE table has been populated with data;
 
 Insert Into CASTING5520 (CastId, ActorNo, MovieNo) Values (1, 7399, 9472);
 Insert Into CASTING5520 (CastId, ActorNo, MovieNo) Values (2, 17401, 9472);
@@ -4638,24 +4595,9 @@ Insert Into CASTING5520 (CastId, ActorNo, MovieNo) Values (3319, 41087, 259694);
 Insert Into CASTING5520 (CastId, ActorNo, MovieNo) Values (3320, 2157, 8844);
 Insert Into CASTING5520 (CastId, ActorNo, MovieNo) Values (3321, 205, 8844);
 Insert Into CASTING5520 (CastId, ActorNo, MovieNo) Values (3322, 8, 863);
-PROMPT **** The CASTING table has been populated with data;
-
-PROMPT **** Count of Rows in Movie Table...;
 
 Select Count(*) As Number_Of_Movies_Rows_Created from Movie5520;
 
-PROMPT **** Count of Rows in Actor Table...;
-
 Select Count(*) As Number_Of_Actor_Rows_Created from ACTOR5520;
 
-PROMPT **** Count of Rows in Casting Table...;
-
 Select Count(*) As Number_Of_Casting_Rows_Created from Casting5520;
-
-PROMPT INSTRUCTIONS
-PROMPT AFTER THIS SCRIPT HAS BEEN EXECUTED, DO THE FOLLOWING: 
-PROMPT  1. Clear the SQL statement box
-PROMPT  2. Type this SQL statement and execute.   SELECT * FROM MOVIE5520
-PROMPT     (This is how you see the rows in the Movie Table that script created)
-PROMPT  3. Repeat similar SELECT statements for the ACTOR5520 and CASTING5520 tables.   
-

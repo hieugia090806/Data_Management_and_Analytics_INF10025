@@ -1,0 +1,7 @@
+CREATE TABLE CAR5520 (
+  RegNo            VARCHAR(50) PRIMARY KEY,
+  Make             VARCHAR(50) NOT NULL,
+  Model            VARCHAR(50) NOT NULL,
+  SaleDate         DATE NOT NULL,
+  OdometerReading  NUMBER NOT NULL
+);
