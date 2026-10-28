@@ -1,0 +1,6 @@
+complicated and dplicated (M:M)
+create a bridge between them
+Strong entity has strong identifier.
+If I want to list TOP 5 or TOP 10, type NEXY TO SELECT.
+order how SQL run: FROM => Find another table (If JOIN) => WHERE (Filter, Put many condition as want) => GROUP BY 
+=> HAVING (condition for aggregation) => SELECT => ORDER => LIMIT

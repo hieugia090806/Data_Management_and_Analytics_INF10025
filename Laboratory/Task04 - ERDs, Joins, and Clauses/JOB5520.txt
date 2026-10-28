@@ -1,0 +1,9 @@
+CREATE TABLE JOB5520 (
+  JobID         VARCHAR(50) PRIMARY KEY,
+  Title         VARCHAR(50),
+  DurationHours VARCHAR(50)
+  Description   VARCHAR(50)
+);
+
+INSERT INTO JOB5520 (JobID, Title, DurationHours, Description) VALUES ('47', 'Lunch Delivery', 2, 'Deliver office lunch orders')
+INSERT INTO JOB5520 (JobID, Title, DurationHours, Description) VALUES ('52', 'Dinner Delivery', 3, 'Evening dinner deliveries')

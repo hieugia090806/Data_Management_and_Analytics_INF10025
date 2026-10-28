@@ -1,0 +1,11 @@
+CREATE TABLE COMEDIAN5520 (
+  Email           VARCHAR(100) PRIMARY KEY,
+  ComedianName    VARCHAR(50),
+  ComedianAddress VARCHAR(100),
+  ContactNo       VARCHAR(20)
+);
+
+INSERT INTO COMEDIAN5520 (Email, ComedianName, ComedianAddress, ContactNo) 
+VALUES ('anna.lee@example.com', 'Anna Lee', '10 Burwood Rd, Hawthorn', '0411111111')
+INSERT INTO COMEDIAN5520 (Email, ComedianName, ComedianAddress, ContactNo) 
+VALUES ('tom.reed@example.com', 'Tom Reed', '22 Glenferrie Rd, Hawthorn', '0422222222')

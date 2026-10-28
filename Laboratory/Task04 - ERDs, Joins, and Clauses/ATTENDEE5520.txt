@@ -1,0 +1,11 @@
+CREATE TABLE ATTENDEE5520 (
+  Barcode         VARCHAR(20) PRIMARY KEY,
+  AttendeeName    VARCHAR(50),
+  AttendeeAddress VARCHAR(100),
+  PhoneNo         VARCHAR(20)
+);
+
+INSERT INTO ATTENDEE5520 (Barcode, AttendeeName, AttendeeAddress, PhoneNo) 
+VALUES ('B1001', 'Minh Tran', '5 Camberwell Rd, Camberwell', '0933333333')
+INSERT INTO ATTENDEE5520 (Barcode, AttendeeName, AttendeeAddress, PhoneNo) 
+VALUES ('B1002', 'Linh Pham', '8 Riversdale Rd, Hawthorn', '0944444444')
