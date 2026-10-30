@@ -1,9 +1,5 @@
-PROMPT  Using the Find & Replace function in Notepad, replace the letters "XXXX" with the last 4 digits of your Student Id
-PROMPT  Execute this script in ISQL JR.
-
-
-drop table customerXXXX;
-create table customerXXXX(
+drop table customer5520;
+create table customer5520(
 custid number,
 gender varchar(1),
 givenname varchar(50),
@@ -18,56 +14,56 @@ rating number(1),
 primary key (custid)
 );
 
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1849,'F','Caitlyn','Alice','1 Murphy St','Greenwoods Valley','Western Australia',6405,1379,1793,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (2064,'F','Skye','Appleroth','48 Souttar Drive','Duncraig','Western Australia',6023,1151,1221,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (2058,'F','Paige','Ashton','87 Daly Street','Ocean Reef','Western Australia',6027,3863,1932,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (2004,'F','Keira','Beet','41 Cubbine Boulevard','Muntadgin','Western Australia',6420,687,83,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1812,'M','David','Boucher','47 Banksia Street','Julimar','Western Australia',6567,1744,1082,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1950,'F','Laura','Broomfield','93 Foreshore Road','Red Hill','Western Australia',6056,0,0,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1842,'M','Alex','Cracknell','62 Pipeclay Grove','Crosslands','New South Wales',2446,288,121,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (2080,'M','Cody','Crook','53 Cubbine Way','Nangeenan','Western Australia',6414,32,28,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1814,'F','Amelia','Dugdale','64 Bette McNee Road','Bago','New South Wales',2730,0,0,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1076,'M','Connor','Espie','43 Beach Way','Prospect Vale','Tasmania',7250,118,202,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1364,'M','Brayden','Eumarrah','74 Parkes Grove','Southbank','Victoria',3006,53,101,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1944,'F','Olivia','Farrer','69 Pipeclay Grove','Mortons Creek','New South Wales',2446,598,664,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1043,'M','Ben','Ferguson','46 Hill Blvd','Orielton','Tasmania',7172,0,0,3);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1685,'M','Connor','Fidler','54 Scenic Road','Kalkite','New South Wales',2627,3015,2081,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1473,'F','Ashley','Flack','7 Kaesler Road','Hatherleigh','South Australia',5280,725,1385,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1659,'F','Alexis','Forwood','14/88 McPherson Street','Granya','Victoria',3701,603,157,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1491,'F','Chelsea','Freeman','77 Cherokee Lane','Yandoit Hills','Victoria',3461,341,270,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1080,'M','Ben','Freycinet','46 Mildura St','Norwood','Tasmania',7250,111,8,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1144,'M','Charles','Frome','49 Shell Avenue','Cape Otway','Victoria',3233,0,0,3);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1545,'F','Alannah','Fullwood','51 Auricht Court','Marcollat','South Australia',5271,10,8,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1426,'F','Amelie','Gawler','76 Maintongoon Way','Westbury','Victoria',3825,264,82,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1777,'F','Brooke','Gellatly','40 Wilson Crt','Wycheproof','Victoria',3527,1377,1873,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1586,'F','Ashley','Gilles','27 Harris Road','Ancona','Victoria',3715,0,0,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1508,'M','Austin','Gilroy','56 Yarra St','Newlyn North','Victoria',3364,108,151,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1084,'F','Angelina','Glasgow','22 Mildura Road','Cornwall','Tasmania',7215,846,787,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1342,'F','Angelina','Gleeson','14 Little Crescent','Rokewood','Victoria',3330,75,104,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1114,'F','Bella','Gloucester','7/78 Gilbert St','Camdale','Tasmania',7320,466,863,3);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1776,'M','Adam','Goodisson','38 Wilson Road','Glenloth','Victoria',3527,368,692,3);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1197,'M','Angus','Govett','45 Marley Point Lane','Johnstones Hill','Victoria',3870,765,1133,3);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1378,'M','Aiden','Gowrie','74 Patton Street','Croydon Hills','Victoria',3136,2355,401,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1715,'F','Chloe','Grandi','75 Taylor Street','Nalinga','Victoria',3646,3832,4982,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1467,'M','Brock','Graves','18 Fitzroy Street','Greendale','Victoria',3341,706,890,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1731,'F','Audrey','Grimes','20 Garden Drive','Jeffcott','Victoria',3525,0,0,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1436,'M','Charles','Guthrie','82 Creedon Street','Jacana','Victoria',3047,5,3,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1880,'M','Andrew','Hardess','19/52 Pipeclay Lane','Pembrooke','New South Wales',2446,83,59,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1958,'M','Jasper','Hardman','62 Patton Boulevard','Hawksburn','Victoria',3142,221,405,3);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1887,'M','Joel','Hollis','59 Foreshore St','Helena Valley','Western Australia',6056,697,98,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1956,'F','Ella','Hood','50 Murphy Avenue','Jennapullin','Western Australia',6401,159,136,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1897,'M','Phuong','Huu Tu','67 Horsington Street','Forest Hill','Victoria',3131,1275,2410,3);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1988,'F','Sophia','Huxley','20/21 Upton Ave','Mount George','New South Wales',2424,301,569,3);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1942,'F','Jade','Lush','56 Patton Avenue','Malvern','Victoria',3144,10,12,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1886,'F','Lucy','Moresby','58 Cubbine Road','Tammin','Western Australia',6409,0,0,null);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1889,'M','Cooper','Paspalis','20 Upton Blvd','Mount George','New South Wales',2424,0,0,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1991,'F','Claire','Phillips','7/67 Gaffney Road','Albert Park','Victoria',3206,193,259,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (2036,'F','Ruby','Rischbieth','4 Corny Grove','Ceduna','South Australia',5690,1339,1299,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (2053,'M','Elijah','Schenk','44 Foreshore Drive','Stratton','Western Australia',6056,8,6,3);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1890,'M','Caleb','Simonetti','26 Millicent Blvd','Caffreys Flat','New South Wales',2424,0,0,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1876,'F','Makayla','St Leon','25 Jacolite Road','Gidgegannup','Western Australia',6083,4008,3688,2);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1900,'F','Natalie','Teague','41 Shannon St','Kanyaka','South Australia',5434,356,663,3);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1993,'M','Elijah','Thorby','69 Upton Grove','Cundle Flat','New South Wales',2424,0,0,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1823,'M','Andrew','Toutcher','85 Patton Crt','Malvern','Victoria',3144,1145,2142,1);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (2043,'F','Tayla','Watriama','17 Horsington Road','Auburn South','Victoria',3122,941,1497,null);
-insert into customerXXXX (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1938,'M','Ashton','Were','62 Souttar Street','Greenwood','Western Australia',6024,688,1046,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1849,'F','Caitlyn','Alice','1 Murphy St','Greenwoods Valley','Western Australia',6405,1379,1793,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (2064,'F','Skye','Appleroth','48 Souttar Drive','Duncraig','Western Australia',6023,1151,1221,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (2058,'F','Paige','Ashton','87 Daly Street','Ocean Reef','Western Australia',6027,3863,1932,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (2004,'F','Keira','Beet','41 Cubbine Boulevard','Muntadgin','Western Australia',6420,687,83,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1812,'M','David','Boucher','47 Banksia Street','Julimar','Western Australia',6567,1744,1082,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1950,'F','Laura','Broomfield','93 Foreshore Road','Red Hill','Western Australia',6056,0,0,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1842,'M','Alex','Cracknell','62 Pipeclay Grove','Crosslands','New South Wales',2446,288,121,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (2080,'M','Cody','Crook','53 Cubbine Way','Nangeenan','Western Australia',6414,32,28,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1814,'F','Amelia','Dugdale','64 Bette McNee Road','Bago','New South Wales',2730,0,0,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1076,'M','Connor','Espie','43 Beach Way','Prospect Vale','Tasmania',7250,118,202,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1364,'M','Brayden','Eumarrah','74 Parkes Grove','Southbank','Victoria',3006,53,101,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1944,'F','Olivia','Farrer','69 Pipeclay Grove','Mortons Creek','New South Wales',2446,598,664,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1043,'M','Ben','Ferguson','46 Hill Blvd','Orielton','Tasmania',7172,0,0,3);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1685,'M','Connor','Fidler','54 Scenic Road','Kalkite','New South Wales',2627,3015,2081,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1473,'F','Ashley','Flack','7 Kaesler Road','Hatherleigh','South Australia',5280,725,1385,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1659,'F','Alexis','Forwood','14/88 McPherson Street','Granya','Victoria',3701,603,157,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1491,'F','Chelsea','Freeman','77 Cherokee Lane','Yandoit Hills','Victoria',3461,341,270,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1080,'M','Ben','Freycinet','46 Mildura St','Norwood','Tasmania',7250,111,8,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1144,'M','Charles','Frome','49 Shell Avenue','Cape Otway','Victoria',3233,0,0,3);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1545,'F','Alannah','Fullwood','51 Auricht Court','Marcollat','South Australia',5271,10,8,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1426,'F','Amelie','Gawler','76 Maintongoon Way','Westbury','Victoria',3825,264,82,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1777,'F','Brooke','Gellatly','40 Wilson Crt','Wycheproof','Victoria',3527,1377,1873,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1586,'F','Ashley','Gilles','27 Harris Road','Ancona','Victoria',3715,0,0,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1508,'M','Austin','Gilroy','56 Yarra St','Newlyn North','Victoria',3364,108,151,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1084,'F','Angelina','Glasgow','22 Mildura Road','Cornwall','Tasmania',7215,846,787,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1342,'F','Angelina','Gleeson','14 Little Crescent','Rokewood','Victoria',3330,75,104,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1114,'F','Bella','Gloucester','7/78 Gilbert St','Camdale','Tasmania',7320,466,863,3);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1776,'M','Adam','Goodisson','38 Wilson Road','Glenloth','Victoria',3527,368,692,3);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1197,'M','Angus','Govett','45 Marley Point Lane','Johnstones Hill','Victoria',3870,765,1133,3);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1378,'M','Aiden','Gowrie','74 Patton Street','Croydon Hills','Victoria',3136,2355,401,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1715,'F','Chloe','Grandi','75 Taylor Street','Nalinga','Victoria',3646,3832,4982,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1467,'M','Brock','Graves','18 Fitzroy Street','Greendale','Victoria',3341,706,890,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1731,'F','Audrey','Grimes','20 Garden Drive','Jeffcott','Victoria',3525,0,0,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1436,'M','Charles','Guthrie','82 Creedon Street','Jacana','Victoria',3047,5,3,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1880,'M','Andrew','Hardess','19/52 Pipeclay Lane','Pembrooke','New South Wales',2446,83,59,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1958,'M','Jasper','Hardman','62 Patton Boulevard','Hawksburn','Victoria',3142,221,405,3);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1887,'M','Joel','Hollis','59 Foreshore St','Helena Valley','Western Australia',6056,697,98,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1956,'F','Ella','Hood','50 Murphy Avenue','Jennapullin','Western Australia',6401,159,136,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1897,'M','Phuong','Huu Tu','67 Horsington Street','Forest Hill','Victoria',3131,1275,2410,3);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1988,'F','Sophia','Huxley','20/21 Upton Ave','Mount George','New South Wales',2424,301,569,3);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1942,'F','Jade','Lush','56 Patton Avenue','Malvern','Victoria',3144,10,12,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1886,'F','Lucy','Moresby','58 Cubbine Road','Tammin','Western Australia',6409,0,0,null);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1889,'M','Cooper','Paspalis','20 Upton Blvd','Mount George','New South Wales',2424,0,0,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1991,'F','Claire','Phillips','7/67 Gaffney Road','Albert Park','Victoria',3206,193,259,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (2036,'F','Ruby','Rischbieth','4 Corny Grove','Ceduna','South Australia',5690,1339,1299,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (2053,'M','Elijah','Schenk','44 Foreshore Drive','Stratton','Western Australia',6056,8,6,3);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1890,'M','Caleb','Simonetti','26 Millicent Blvd','Caffreys Flat','New South Wales',2424,0,0,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1876,'F','Makayla','St Leon','25 Jacolite Road','Gidgegannup','Western Australia',6083,4008,3688,2);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1900,'F','Natalie','Teague','41 Shannon St','Kanyaka','South Australia',5434,356,663,3);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1993,'M','Elijah','Thorby','69 Upton Grove','Cundle Flat','New South Wales',2424,0,0,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1823,'M','Andrew','Toutcher','85 Patton Crt','Malvern','Victoria',3144,1145,2142,1);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (2043,'F','Tayla','Watriama','17 Horsington Road','Auburn South','Victoria',3122,941,1497,null);
+insert into customer5520 (CustId,Gender,GivenName,Surname,Street,City,State,PostCode,SalesThisYear,SalesLastYear,Rating) values (1938,'M','Ashton','Were','62 Souttar Street','Greenwood','Western Australia',6024,688,1046,1);
