@@ -1,0 +1,5 @@
+CREATE TABLE PART5520 (
+  PartID       NUMBER(6) PRIMARY KEY,
+  PartName     VARCHAR(50),
+  UnitPrice    NUMBER(8,2)
+);

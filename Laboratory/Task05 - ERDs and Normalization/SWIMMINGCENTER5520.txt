@@ -1,0 +1,9 @@
+CREATE TABLE SWIMMINGCENTRE5520 (
+  CentreName              VARCHAR(50) PRIMARY KEY,
+  EstablishmentDate       DATE,
+  Description             VARCHAR(200)
+);
+
+INSERT INTO SWIMMINGCENTRE5520 VALUES ('Docklands Wave Centre', TO_DATE('12/03/2005','DD/MM/YYYY'), 'Indoor 50m pool');
+INSERT INTO SWIMMINGCENTRE5520 VALUES ('Northside Aqua Centre', TO_DATE('01/09/2010','DD/MM/YYYY'), 'Family leisure pool');
+INSERT INTO SWIMMINGCENTRE5520 VALUES ('Eastgate Splash Centre', TO_DATE('20/06/2015','DD/MM/YYYY'), 'Learn-to-swim centre');

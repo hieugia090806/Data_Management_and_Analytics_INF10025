@@ -1,0 +1,5 @@
+CREATE TABLE TASK5520 (
+  TaskID     NUMBER(6) PRIMARY KEY,
+  TaskName   VARCHAR(50),
+  HourlyRate NUMBER(8,2)
+);

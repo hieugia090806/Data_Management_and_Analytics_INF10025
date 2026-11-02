@@ -1,0 +1,7 @@
+CREATE TABLE MOTORCYCLE5520 (
+  VIN             VARCHAR(17) PRIMARY KEY,
+  Make            VARCHAR(30),
+  Model           VARCHAR(30),
+  ManufactureYear NUMBER(4),
+  EngineCC        NUMBER(5)
+);
