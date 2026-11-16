@@ -1,0 +1,12 @@
+-- ##1. Create Table. ##--
+CREATE TABLE JOB5520 (
+  JobID             VARCHAR(20) PRIMARY KEY,
+  JobTitle          VARCHAR(50),
+  DurationHours     VARCHAR(50),
+  Description       VARCHAR(50)
+);
+-- ##2. Insert Data. ##--
+INSERT INTO JOB5520 (JobID, JobTitle, DurationHours, Description)
+VALUES ('47', 'Pizza Delivery', '2', 'Deliver pizzas to customers in Hawthorn');
+INSERT INTO JOB5520 (JobID, JobTitle, DurationHours, Description)
+VALUES ('52', 'Grocery Delivery', '3', 'Deliver groceries to customers in Kew');

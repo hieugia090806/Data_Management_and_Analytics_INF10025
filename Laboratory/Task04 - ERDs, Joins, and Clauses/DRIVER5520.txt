@@ -1,0 +1,11 @@
+-- ##1. Create Table. ##--
+CREATE TABLE DRIVER5520 (
+  MobileNum  VARCHAR(20) PRIMARY KEY,
+  Name       VARCHAR(50),
+  Address    VARCHAR(50)
+);
+-- ##2. Insert Data. ##--
+INSERT INTO DRIVER5520 (MobileNumber, DriverName, DriverAddress)
+VALUES ('0412345678', 'Jim Smith', '10 Glenferrie Rd, Hawthorn');
+INSERT INTO DRIVER5520 (MobileNumber, DriverName, DriverAddress)
+VALUES ('0498765432', 'Anna Lee', '25 Burke Rd, Kew');

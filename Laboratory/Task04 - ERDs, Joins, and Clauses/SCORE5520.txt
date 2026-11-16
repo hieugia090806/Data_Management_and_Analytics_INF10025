@@ -1,0 +1,15 @@
+CREATE TABLE SCORE5520 (
+  ScoreValue        NUMBER(2) PRIMARY KEY CHECK (ScoreValue BETWEEN 1 AND 10),
+  ScoreDescription  VARCHAR(50)
+);
+
+INSERT INTO SCORE5520 (ScoreValue, ScoreDescription) VALUES (1, 'Very Poor');
+INSERT INTO SCORE5520 (ScoreValue, ScoreDescription) VALUES (2, 'Poor');
+INSERT INTO SCORE5520 (ScoreValue, ScoreDescription) VALUES (3, 'Below Average');
+INSERT INTO SCORE5520 (ScoreValue, ScoreDescription) VALUES (4, 'Fair');
+INSERT INTO SCORE5520 (ScoreValue, ScoreDescription) VALUES (5, 'Average');
+INSERT INTO SCORE5520 (ScoreValue, ScoreDescription) VALUES (6, 'Above Average');
+INSERT INTO SCORE5520 (ScoreValue, ScoreDescription) VALUES (7, 'Good');
+INSERT INTO SCORE5520 (ScoreValue, ScoreDescription) VALUES (8, 'Very Good');
+INSERT INTO SCORE5520 (ScoreValue, ScoreDescription) VALUES (9, 'Outstanding');
+INSERT INTO SCORE5520 (ScoreValue, ScoreDescription) VALUES (10, 'Excellent');

@@ -1,0 +1,10 @@
+-- ##1. Create Table Name CAMPAIGN5520. ##--
+CREATE TABLE CAMPAIGN5520 (
+  CampaignCode  VARCHAR(20) PRIMARY KEY,
+  CampaignTitle VARCHAR(50)
+);
+
+-- ##2. Insert Data. ##--
+INSERT INTO CAMPAIGN5520 (CampaignCode, CampaignTitle) VALUES ('1', 'Campaign One');
+INSERT INTO CAMPAIGN5520 (CampaignCode, CampaignTitle) VALUES ('2', 'Campaign Two');
+INSERT INTO CAMPAIGN5520 (CampaignCode, CampaignTitle) VALUES ('3', 'Campaign Three');

@@ -1,0 +1,15 @@
+-- ##1. Create Table PLAYER5520. ##--
+CREATE TABLE PLAYER5520 (
+  Pid          VARCHAR(20) PRIMARY KEY,
+  PName        VARCHAR(50),
+  Gender       VARCHAR(20),
+  CampaignCode VARCHAR(20) REFERENCES CAMPAIGN5520
+);
+
+-- ##2. Insert Data. ##--
+INSERT INTO PLAYER5520 (Pid, PName, Gender, CampaignCode) VALUES ('21', 'Ali Aien', 'M', '2');
+INSERT INTO PLAYER5520 (Pid, PName, Gender, CampaignCode) VALUES ('22', 'Robert Tipping', 'M', '1');
+INSERT INTO PLAYER5520 (Pid, PName, Gender, CampaignCode) VALUES ('23', 'Lynda Rogers', 'F', '1');
+INSERT INTO PLAYER5520 (Pid, PName, Gender, CampaignCode) VALUES ('24', 'Sheelan Aien', 'F', '2');
+INSERT INTO PLAYER5520 (Pid, PName, Gender, CampaignCode) VALUES ('25', 'Truong Ngoc Gia Hieu', 'M', '3');
+INSERT INTO PLAYER5520 (Pid, PName, Gender, CampaignCode) VALUES ('26', 'Duong Nguyen Dang', 'M', '3');

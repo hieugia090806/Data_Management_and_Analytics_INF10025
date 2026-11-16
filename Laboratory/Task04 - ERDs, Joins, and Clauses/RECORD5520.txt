@@ -1,0 +1,15 @@
+-- ##1. Create table. ##--
+CREATE TABLE RECORD5520 (
+  JobID         VARCHAR(20),
+  MobileNumber  VARCHAR(20),
+  JobDate       DATE,
+  Fee           NUMBER(6,2),
+  PRIMARY KEY (JobID, MobileNumber, JobDate),
+  FOREIGN KEY (JobID) REFERENCES JOB5520 (JobID),
+  FOREIGN KEY (MobileNumber) REFERENCES DRIVER5520 (MobileNum)
+);
+
+INSERT INTO RECORD5520 (JobID, MobileNumber, JobDate, Fee)
+VALUES ('47', '0412345678', TO_DATE('15/04/2018', 'DD/MM/YYYY'), 10);
+INSERT INTO RECORD5520 (JobID, MobileNumber, JobDate, Fee)
+VALUES ('52', '0498765432', TO_DATE('20/04/2018', 'DD/MM/YYYY'), 15);

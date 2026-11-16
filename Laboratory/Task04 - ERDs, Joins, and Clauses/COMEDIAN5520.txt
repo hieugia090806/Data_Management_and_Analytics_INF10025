@@ -1,0 +1,12 @@
+-- ##1. Create Table COMEDIAN5520 ##--
+CREATE TABLE COMEDIAN5520 (
+  ComedianEmail    VARCHAR(50) PRIMARY KEY,
+  ComedianName     VARCHAR(50),
+  ComedianAddress  VARCHAR(100),
+  ContactNumber    VARCHAR(20)
+);
+
+INSERT INTO COMEDIAN5520 (ComedianEmail, ComedianName, ComedianAddress, ContactNumber)
+VALUES ('tom@comedy.com', 'Tom Walker', '12 Power St, Hawthorn', '0411111111');
+INSERT INTO COMEDIAN5520 (ComedianEmail, ComedianName, ComedianAddress, ContactNumber)
+VALUES ('lisa@comedy.com', 'Lisa Nguyen', '8 Church St, Richmond', '0422222222');

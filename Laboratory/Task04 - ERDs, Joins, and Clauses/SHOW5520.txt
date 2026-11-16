@@ -1,0 +1,12 @@
+CREATE TABLE SHOW5520 (
+  ShowID           VARCHAR(20) PRIMARY KEY,
+  ShowTitle        VARCHAR(50),
+  ShowDescription  VARCHAR(200),
+  ComedianEmail    VARCHAR(50) NOT NULL,
+  FOREIGN KEY (ComedianEmail) REFERENCES COMEDIAN5520 (ComedianEmail)
+);
+
+INSERT INTO SHOW5520 (ShowID, ShowTitle, ShowDescription, ComedianEmail)
+VALUES ('S01', 'Laugh Out Loud', 'Stand-up comedy night', 'tom@comedy.com');
+INSERT INTO SHOW5520 (ShowID, ShowTitle, ShowDescription, ComedianEmail)
+VALUES ('S02', 'Funny Business', 'Comedy about office life', 'lisa@comedy.com');
