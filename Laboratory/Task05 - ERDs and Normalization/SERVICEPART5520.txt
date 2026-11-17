@@ -1,0 +1,9 @@
+CREATE TABLE SERVICEPART5520 (
+    VIN VARCHAR(50),
+    ServiceDate TIMESTAMP,
+    PartName VARCHAR(100),
+    Quantity INT NOT NULL,
+    PRIMARY KEY (VIN, ServiceDate, PartName),
+    FOREIGN KEY (VIN, ServiceDate) REFERENCES SERVICE5520(VIN, ServiceDate),
+    FOREIGN KEY (PartName) REFERENCES PART5520(PartName)
+);

@@ -1,0 +1,10 @@
+CREATE TABLE SERVICE5520 (
+    VIN         VARCHAR(50),
+    ServiceDate TIMESTAMP,
+    Location    VARCHAR(100),
+    TotalCost   DECIMAL(10, 2),
+    CustomerID  INT,
+    PRIMARY KEY (VIN, ServiceDate),
+    FOREIGN KEY (VIN) REFERENCES MOTORCYCLE5520(VIN),
+    FOREIGN KEY (CustomerID) REFERENCES CONSUMER5520(CustomerID)
+);

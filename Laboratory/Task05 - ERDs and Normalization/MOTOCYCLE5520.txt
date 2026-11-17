@@ -1,0 +1,7 @@
+CREATE TABLE MOTORCYCLE5520 (
+    VIN               VARCHAR(50) PRIMARY KEY,
+    Make   		    VARCHAR(50) NOT NULL,
+    Model             VARCHAR(50) NOT NULL,
+    YearOfManufacture INT,
+    CC                INT
+);

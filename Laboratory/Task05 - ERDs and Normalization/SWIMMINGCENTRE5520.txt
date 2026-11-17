@@ -1,0 +1,12 @@
+CREATE TABLE SWIMMINGCENTRE5520 (
+  CentreName         VARCHAR(50) PRIMARY KEY,
+  EstablishmentDate  DATE,
+  Description        VARCHAR(50)
+);
+
+INSERT INTO SWIMMINGCENTRE5520 (CentreName, EstablishmentDate, Description)  
+VALUES ('Hawthorn Aquatic Centre', TO_DATE('12/05/2010', 'DD/MM/YYYY'), 'Main facility with indoor heated pools');
+INSERT INTO SWIMMINGCENTRE5520 (CentreName, EstablishmentDate, Description) 
+VALUES ('Kew Swimming Club', TO_DATE('18/09/2015', 'DD/MM/YYYY'), 'Outdoor Olympic size pool and training centre');
+INSERT INTO SWIMMINGCENTRE5520 (CentreName, EstablishmentDate, Description) 
+VALUES ('Brighton Beach Baths', TO_DATE('01/02/2018', 'DD/MM/YYYY'), 'Coastal seawater training facility');

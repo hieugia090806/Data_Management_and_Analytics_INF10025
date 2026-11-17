@@ -1,0 +1,11 @@
+CREATE TABLE CLIENT5520 (
+    ClientID        VARCHAR(20) PRIMARY KEY,
+    ClientName VARCHAR(50)
+);
+
+INSERT INTO CLIENT5520 (ClientID, ClientName) 
+VALUES ('C001', 'Truong Ngoc Gia Hieu');
+INSERT INTO CLIENT5520 (ClientID, ClientName) 
+VALUES ('C002', 'Duong Nguyen Dang');
+INSERT INTO CLIENT5520 (ClientID, ClientName) 
+VALUES ('C003', 'Alex Johnson');

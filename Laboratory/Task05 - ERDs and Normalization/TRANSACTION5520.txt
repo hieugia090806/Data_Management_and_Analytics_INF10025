@@ -1,0 +1,36 @@
+-- Create tables
+CREATE TABLE PRODUCT5520 (
+  ProdID       VARCHAR(10) PRIMARY KEY,
+  Brand        VARCHAR(30),
+  Description  VARCHAR(100),
+  PricePerOne  NUMBER(8,2),
+  QtyInStock   NUMBER(5) CHECK (QtyInStock >= 0)
+);
+
+CREATE TABLE ACTION5520 (
+  ActionID       NUMBER(6) PRIMARY KEY,
+  ActionDateTime DATE,
+  ActionType     VARCHAR(10),
+  ProdID         VARCHAR(10),
+  ProdQty        NUMBER(5),
+  ProdCost       NUMBER(8,2),
+  FOREIGN KEY (ProdID) REFERENCES PRODUCT5520(ProdID)
+);
+
+-- Initial product data
+INSERT INTO PRODUCT5520 VALUES ('G43546', 'Gucci', 'Leather mid-heel pump', 1050.00, 12);
+COMMIT;
+
+-- Transaction 1: Purchase of 2 units (stock 12 -> 10)
+INSERT INTO ACTION5520 VALUES (1008, TO_DATE('21/01/2021','DD/MM/YYYY'), 'Purchase', 'G43546', 2, 2100.00);
+UPDATE PRODUCT5520 SET QtyInStock = QtyInStock - 2 WHERE ProdID = 'G43546';
+COMMIT;
+
+-- Transaction 2: Return of 1 unit (stock 10 -> 11)
+INSERT INTO ACTION5520 VALUES (1026, TO_DATE('23/01/2021','DD/MM/YYYY'), 'Return', 'G43546', -1, 1050.00);
+UPDATE PRODUCT5520 SET QtyInStock = QtyInStock + 1 WHERE ProdID = 'G43546';
+COMMIT;
+
+-- Verify results
+SELECT * FROM ACTION5520;
+SELECT * FROM PRODUCT5520;

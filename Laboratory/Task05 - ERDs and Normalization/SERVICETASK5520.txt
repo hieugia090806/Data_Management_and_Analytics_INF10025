@@ -1,0 +1,9 @@
+CREATE TABLE SERVICETASK5520 (
+    VIN         VARCHAR(50),
+    ServiceDate TIMESTAMP,
+    TaskName    VARCHAR(100),
+    TimeTaken   DECIMAL(5, 2),
+    PRIMARY KEY (VIN, ServiceDate, TaskName),
+    FOREIGN KEY (VIN, ServiceDate) REFERENCES SERVICE5520(VIN, ServiceDate),
+    FOREIGN KEY (TaskName) REFERENCES TASK5520(TaskName)
+);
