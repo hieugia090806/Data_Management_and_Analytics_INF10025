@@ -1,0 +1,26 @@
+"EventID","EventDesc","EventCode","Distance"
+1,"Road Bike Rampage","RB",10
+2,"Tour de Melbourne","RB",20
+3,"Velo Venture","RB",50
+4,"Push It Pursuit","RB",75
+5," Explorer Challenge","MTB",5
+6,"Uphill Haul","MTB",10
+7,"Trees and Rocks","MTB",15
+8,"Serious Stuff","MTB",20
+9,"Jolly Jogger","RN",3
+10,"Road Run","RN",5
+11,"Reality Race","RN",8
+12,"Tarmac Torture","RN",12
+13,"Cross Country Crusade","CCR",2
+14,"Cross Country Burner","CCR",4
+15,"Cross Country Onslaught","CCR",6
+16,"Cross Country OMG","CCR",8
+17,"Summer Saunter","PO",2
+18,"2 foot feat","PO",4
+19,"Find it Fast","PO",6
+20,"All Out Attack","PO",8
+21,"Bush Beginner","BO",2
+22,"Bush Bash","BO",4
+23,"Bush Buster","BO",6
+24,"Bush Serious","BO",8
+25,"Student Special Walking Race","SP",3
